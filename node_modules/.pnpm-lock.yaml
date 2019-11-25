@@ -1,0 +1,16 @@
+dependencies:
+  lit-element: 2.2.1
+lockfileVersion: 5.1
+packages:
+  /lit-element/2.2.1:
+    dependencies:
+      lit-html: 1.1.2
+    dev: false
+    resolution:
+      integrity: sha512-ipDcgQ1EpW6Va2Z6dWm79jYdimVepO5GL0eYkZrFvdr0OD/1N260Q9DH+K5HXHFrRoC7dOg+ZpED2XE0TgGdXw==
+  /lit-html/1.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-FFlUMKHKi+qG1x1iHNZ1hrtc/zHmfYTyrSvs3/wBTvaNtpZjOZGWzU7efGYVpgp6KvWeKF6ql9/KsCq6Z/mEDA==
+specifiers:
+  lit-element: ^2.2.1

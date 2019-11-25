@@ -1,0 +1,149 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+button,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+title,
+tr,
+tt,
+u,
+ul,
+var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: 0 0;
+}
+
+@font-face {
+  font-family: "Lazer84";
+  src: url("/Lazer84.271383cb.ttf");
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #111111;
+}
+
+nav {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+nav .vertical--break {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+nav .nav--title {
+  width: 60%;
+  text-align: center;
+  padding-top: 5vh;
+  color: #EE3D86;
+  font-family: "Lazer84";
+  font-size: 4em;
+}
+
+.vertical--break {
+  width: 10vw;
+  display: flex;
+}
+.vertical--break div {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.vertical--break div.break--outside {
+  width: 20%;
+  height: 100%;
+}
+.vertical--break div.break--middle {
+  width: 20%;
+  height: 80%;
+}
+.vertical--break div.break--inside {
+  width: 20%;
+  height: 60%;
+}
+
+.color--1 {
+  background-color: #EE3D86;
+}
+
+.color--2 {
+  background-color: #FEDB48;
+}
+
+.color--3 {
+  background-color: #60C8D3;
+}
+
+nav {
+  height: 20vh;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
