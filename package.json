@@ -20,6 +20,7 @@
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "sass": "^1.23.7"
   }
 }
