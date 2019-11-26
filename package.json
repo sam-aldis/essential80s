@@ -4,7 +4,7 @@
   "description": "Essential 80s Tribute Band Website",
   "main": "serve.js",
   "scripts": {
-    "test": "parcel src/index.html"
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
