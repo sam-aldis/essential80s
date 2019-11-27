@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sam-aldis/essential80s#readme",
   "dependencies": {
+    "cosmiconfig": "^6.0.0",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {

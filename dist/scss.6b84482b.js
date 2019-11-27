@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../.nvm/versions/node/v12.13.0/pnpm-global/3/node_modules/.pnpm/registry.npmjs.org/parcel/1.12.4/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../.nvm/versions/node/v12.13.0/pnpm-global/3/node_modules/.pnpm/registry.npmjs.org/parcel/1.12.4/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../.nvm/versions/node/v12.13.0/pnpm-global/3/node_modules/.pnpm/registry.npmjs.org/parcel/1.12.4/node_modules/parcel/src/builtins/bundle-url.js"}],"scss/index.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/bundle-url.js"}],"scss/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/home/sam/Projects/Essential80s/src/fonts/Lazer84.ttf":[["Lazer84.271383cb.ttf","fonts/Lazer84.ttf"],"fonts/Lazer84.ttf"],"_css_loader":"../../../.nvm/versions/node/v12.13.0/pnpm-global/3/node_modules/.pnpm/registry.npmjs.org/parcel/1.12.4/node_modules/parcel/src/builtins/css-loader.js"}],"../../../.nvm/versions/node/v12.13.0/pnpm-global/3/node_modules/.pnpm/registry.npmjs.org/parcel/1.12.4/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\samal\\Projects\\AshPicken\\src\\fonts\\Lazer84.ttf":[["Lazer84.271383cb.ttf","fonts/Lazer84.ttf"],"fonts/Lazer84.ttf"],"_css_loader":"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39067" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3103" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -248,9 +248,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
+      } else {
+        window.location.reload();
       }
     }
 
@@ -393,5 +392,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.nvm/versions/node/v12.13.0/pnpm-global/3/node_modules/.pnpm/registry.npmjs.org/parcel/1.12.4/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/scss.6b84482b.js.map
