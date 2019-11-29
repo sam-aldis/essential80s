@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\samal\\Projects\\AshPicken\\src\\fonts\\Lazer84.ttf":[["Lazer84.271383cb.ttf","fonts/Lazer84.ttf"],"fonts/Lazer84.ttf"],"_css_loader":"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\samal\\Projects\\AshPicken\\src\\fonts\\Lazer84.ttf":[["Lazer84.271383cb.ttf","fonts/Lazer84.ttf"],"fonts/Lazer84.ttf"],"./..\\images\\perspective.svg":[["perspective.8e9d3939.svg","images/perspective.svg"],"images/perspective.svg"],"_css_loader":"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/pnpm-global/2/node_modules/.registry.npmjs.org/parcel/1.12.3/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3103" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10318" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

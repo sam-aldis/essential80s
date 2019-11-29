@@ -85,10 +85,11 @@ var {
     src: url("/fonts/Lazer84.ttf");
 }
 
-// colors
+// variables
 $color1: #EE3D86;
 $color2: #FEDB48;
 $color3: #60C8D3;
+$bgPerspective: url("../images/perspective.svg");
 // main
 body,
 html {
@@ -97,7 +98,11 @@ html {
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #111111;
+    background-image: $bgPerspective;
+    background-size: 20%;
+    background-size: cover;
+    background-position: bottom;
+    background-color: #111111;
 }
 
 nav {
@@ -130,6 +135,10 @@ nav {
             }
             cursor: pointer;
             user-select: none;
+            @include mobile {
+                font-size: 16pt;
+                align-content: center;
+            }
             margin: 5px;
             margin-top: 1em;
         }
@@ -140,8 +149,11 @@ nav {
 header {
     z-index: 10;
     display: flex;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     .vertical--break {
         margin-left: 10%;
         margin-right: 10%;
@@ -155,6 +167,9 @@ header {
             font-family: "Lazer84";
             text-shadow: 2px 2px #D00F86;
             font-size: 5vw;
+            @include mobile {
+                font-size: 8vw !important;
+            }
             word-wrap: break-word;
         }
         p {
@@ -180,6 +195,10 @@ header {
     max-width: 50px;
     display: flex;
     z-index: 10;
+    @include mobile {
+        max-width: 20vw !important;
+        width: 20vw !important;
+    }
     div {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -221,7 +240,7 @@ header {
 
 main {
     font-family: "Tomorrow", sans-serif;
-    height: 100vh;
+    height: min-content;
     color: white;
     width: 100vw;
     .content--center {
@@ -234,7 +253,12 @@ main {
         }
         ul,
         li {
-            list-style: square;
+            list-style: none;
+            color: #FFFF24;
+            font-variant-caps: petite-caps;
+        }
+        .content--tagline {
+            font-variant-caps: petite-caps;
         }
     }
 }
@@ -242,7 +266,7 @@ main {
 footer {
     height: 5vh;
     background: black;
-    position: sticky;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;

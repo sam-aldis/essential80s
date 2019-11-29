@@ -6,17 +6,19 @@
 			Essential 80s
 		</title>
 		<link href="https://fonts.googleapis.com/css?family=Monoton|Notable|Tomorrow&display=swap" rel="stylesheet">
+		<link href="./fonts/all.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./scss/index.scss" />
+		<script src="./ts/index.ts"></script>
 	</head>
 	<body>
 		<nav>
 			<div class="menu">
-				<p class="nav--button current--page">Home</p>
-				<p class="nav--button">The Show</p>
-				<p class="nav--button">Repertoire</p>
-				<p class="nav--button">Media</p>
-				<p class="nav--button">Gallery</p>
-				<p class="nav--button">Bookings</p>
+				<p class="nav--button current--page" id="NAVhome" onclick="document.location.hash='#home'">Home</p>
+				<p class="nav--button" id="NAVtheshow" onclick="document.location.hash='#theshow'">The Show</p>
+				<p class="nav--button" id="NAVrepertoire" onclick="document.location.hash='#repertoire'">Repertoire</p>
+				<p class="nav--button" id="NAVmedia" onclick="document.location.hash='#media'">Media</p>
+				<p class="nav--button" id="NAVgallery" onclick="document.location.hash='#gallery'">Gallery</p>
+				<p class="nav--button" id="NAVbookings" onclick="document.location.hash='#bookings'">Bookings</p>
 			</div>
 		</nav>
 		<header>
@@ -37,24 +39,44 @@
 			</div>
 		</header>
 		<main>
-			<div class="content--center">
-			<h3>Available for</h3>
-			<ul>
-			<li>WEDDINGS</li>
-			<li>CORPORATE EVENTS</li>
-			<li>FUNCTIONS</li>
-			<li>FESTIVALS</li>
-			<li>CLUBS & MORE!</li>
-			</ul>
-			<p>BOOK THE ACT THAT WILL FILL YOUR DANCE FLOOR FROM START TO FINISH! GUARANTEED!</p>
-			</div>
+			<article id="home">
+				<div class="content--center">
+				<h3>Available for</h3>
+				<ul>
+				<li><i class="far fa-check-circle"></i> Weddings</li>
+				<li><i class="far fa-check-circle"></i> Corporate Events</li>
+				<li><i class="far fa-check-circle"></i> Functions</li>
+				<li><i class="far fa-check-circle"></i> Festivals</li>
+				<li><i class="far fa-check-circle"></i> Clubs & More!</li>
+				</ul>
+				<p class="content--tagline">Book The Act that will FILL Your Dance Floor From Start to Finish, Guareanteed!</p>
+				</div>
+			</article>
+			<article id="theshow" class="article--hidden">
+
+			</article>
+			<article id="repertoire" class="article--hidden">
+			
+			</article>
+			<article id="media" class="article--hidden">
+			
+			</article>
+			<article id="gallery" class="article--hidden">
+
+			</article>
+			<article id="bookings" class="article--hidden">
+
+			</article>
 		</main>
 		<footer>
 		<div class="footer--copy">
 			&copy; 2019; Essential 80s Band
+			<i class="fab fa-facebook"></i>
 		</div>
 		<div class="footer--social">
+			
 		</div>
 		</footer>
 	</body>
+
 </html>

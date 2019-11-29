@@ -86,7 +86,11 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #111111;
+  background-image: url("/perspective.8e9d3939.svg");
+  background-size: 20%;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #111111;
 }
 
 nav {
@@ -129,12 +133,21 @@ nav div p.current--page {
 nav div p:hover {
   color: #FEDB48 !important;
 }
+@media screen and (max-width: 401px) {
+  nav div p {
+    font-size: 16pt;
+    align-content: center;
+  }
+}
 
 header {
   z-index: 10;
   display: flex;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 header .vertical--break {
   margin-left: 10%;
@@ -151,6 +164,11 @@ header .nav--title p.title {
   text-shadow: 2px 2px #D00F86;
   font-size: 5vw;
   word-wrap: break-word;
+}
+@media screen and (max-width: 401px) {
+  header .nav--title p.title {
+    font-size: 8vw !important;
+  }
 }
 header .nav--title p {
   font-family: "Tomorrow", sans-serif;
@@ -172,6 +190,12 @@ header .nav--title p {
   max-width: 50px;
   display: flex;
   z-index: 10;
+}
+@media screen and (max-width: 401px) {
+  .vertical--break {
+    max-width: 20vw !important;
+    width: 20vw !important;
+  }
 }
 .vertical--break div {
   border-bottom-left-radius: 5px;
@@ -213,7 +237,7 @@ header .nav--title p {
 
 main {
   font-family: "Tomorrow", sans-serif;
-  height: 100vh;
+  height: min-content;
   color: white;
   width: 100vw;
 }
@@ -228,13 +252,18 @@ main .content--center h3 {
 }
 main .content--center ul,
 main .content--center li {
-  list-style: square;
+  list-style: none;
+  color: #FFFF24;
+  font-variant-caps: petite-caps;
+}
+main .content--center .content--tagline {
+  font-variant-caps: petite-caps;
 }
 
 footer {
   height: 5vh;
   background: black;
-  position: sticky;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
