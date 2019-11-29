@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "parcel src/index.html",
         "make": "parcel build src/index.html",
-        "host": "npm run make && cd dist && now"
+        "host": "pnpm run make && cd dist && now"
     },
     "repository": {
         "type": "git",
