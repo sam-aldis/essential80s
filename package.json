@@ -1,28 +1,30 @@
 {
-  "name": "essential80s",
-  "version": "1.0.0",
-  "description": "Essential 80s Tribute Band Website",
-  "main": "serve.js",
-  "scripts": {
-    "dev": "parcel src/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sam-aldis/essential80s.git"
-  },
-  "author": "Sam Aldis",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/sam-aldis/essential80s/issues"
-  },
-  "homepage": "https://github.com/sam-aldis/essential80s#readme",
-  "dependencies": {
-    "cosmiconfig": "^6.0.0",
-    "lit-element": "^2.2.1"
-  },
-  "devDependencies": {
-    "cssnano": "^4.1.10",
-    "sass": "^1.23.7",
-    "typescript": "^3.7.2"
-  }
+    "name": "essential80s",
+    "version": "1.0.0",
+    "description": "Essential 80s Tribute Band Website",
+    "main": "serve.js",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "make": "parcel build src/index.html",
+        "host": "npm run make && cd dist && now"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sam-aldis/essential80s.git"
+    },
+    "author": "Sam Aldis",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/sam-aldis/essential80s/issues"
+    },
+    "homepage": "https://github.com/sam-aldis/essential80s#readme",
+    "dependencies": {
+        "cosmiconfig": "^6.0.0",
+        "lit-element": "^2.2.1"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "sass": "^1.23.7",
+        "typescript": "^3.7.2"
+    }
 }
