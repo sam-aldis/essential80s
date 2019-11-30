@@ -118,6 +118,7 @@ nav {
   }
 }
 nav div {
+  margin: 2px;
   flex-wrap: wrap;
   display: inline-flex;
 }
@@ -149,9 +150,19 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 401px) {
+  header {
+    padding-left: 0vw !important;
+  }
+}
 header .vertical--break {
   margin-left: 10%;
   margin-right: 10%;
+}
+@media screen and (max-width: 401px) {
+  header .vertical--break {
+    margin-left: 10vw !important;
+  }
 }
 header .nav--title {
   width: 60%;
@@ -193,8 +204,8 @@ header .nav--title p {
 }
 @media screen and (max-width: 401px) {
   .vertical--break {
-    max-width: 20vw !important;
-    width: 20vw !important;
+    max-width: 10vw !important;
+    width: 10vw !important;
   }
 }
 .vertical--break div {
@@ -208,6 +219,11 @@ header .nav--title p {
   animation-duration: 4.8s;
   animation-iteration-count: infinite;
 }
+@media screen and (max-width: 401px) {
+  .vertical--break div.break--outside {
+    width: 5vw !important;
+  }
+}
 .vertical--break div.break--middle {
   width: 20%;
   height: 80%;
@@ -215,12 +231,22 @@ header .nav--title p {
   animation-duration: 4.2s;
   animation-iteration-count: infinite;
 }
+@media screen and (max-width: 401px) {
+  .vertical--break div.break--middle {
+    width: 5vw !important;
+  }
+}
 .vertical--break div.break--inside {
   width: 20%;
   height: 60%;
   animation-name: drip;
   animation-duration: 3.4s;
   animation-iteration-count: infinite;
+}
+@media screen and (max-width: 401px) {
+  .vertical--break div.break--inside {
+    width: 5vw !important;
+  }
 }
 
 .color--1 {
@@ -264,6 +290,7 @@ footer {
   height: 5vh;
   background: black;
   position: absolute;
+  display: flex;
   left: 0;
   right: 0;
   bottom: 0;
@@ -272,10 +299,31 @@ footer .footer--copy {
   position: absolute;
   top: 25%;
   bottom: 0;
+  display: inline-flex;
+  width: 50vw;
   left: 5px;
   margin: auto;
   font-family: "Tomorrow", sans-serif;
   color: white;
+}
+@media screen and (max-width: 401px) {
+  footer .footer--copy {
+    width: 80vw !important;
+  }
+}
+footer .footer--social {
+  color: white;
+  width: 50vw;
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  text-align: right;
+}
+@media screen and (max-width: 401px) {
+  footer .footer--social {
+    width: 20vw !important;
+  }
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */
